@@ -1,2 +1,21 @@
 # COMP20007
-COMP20007 Collection of things
+
+## This is the shared workspace for COMP20007 peers in University 2018
+## Anyone can upload their program to this directory
+
+### Please follow the instruction below to edit this repo:
+
+1. There will be distinct section for each problem sets, please commit your file to the corresponding directory
+2. The formatting of directory will be:
+   - Directory: Great Genre of the problem (E.g. UVaProblem, Lab)
+     - Directory: Sub Genre, id of the question/workshop (E.g. p14, Lab1)
+       - File: question specification, for others to reference. Best to be pdf format.
+       - Directory: Your Id, for identifying the author, This can be annoymous or can be your real name.
+         - Your program. (E.g. Prog.c) Note: Executable File will be excluded by .gitignore
+   - So full example: UVaQuestions/p14/xxxx/prog.c
+4. Always add comment to commits so that others know what you did.
+5. Add comments to your program if possible
+6. If you spot bug(i.e. feature), or suggest changes to others' programs. Use 'Issues' tab to discuss the problem. Which is located above, near the code tab. Do NOT change other's program directly.
+7. Somehow **3** is Missing
+8. Happy collaboration
+   
