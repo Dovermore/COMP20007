@@ -12,10 +12,10 @@
        - File: question specification, for others to reference. Best to be pdf format.
        - Directory: Your Id, for identifying the author, This can be annoymous or can be your real name.
          - Your program. (E.g. Prog.c) Note: Executable File will be excluded by .gitignore
-   - So full example: UVaQuestions/p14/xxxx/prog.c
+   - So full example: **UVaQuestions/p14/xxxx/prog.c(also test cases/Outputs)**
+3. To be added when Gabe announced **Half-life 3**
 4. Always add comment to commits so that others know what you did.
 5. Add comments to your program if possible
 6. If you spot bug(i.e. feature), or suggest changes to others' programs. Use 'Issues' tab to discuss the problem. Which is located above, near the code tab. Do NOT change other's program directly.
-7. Somehow **3** is Missing
-8. Happy collaboration
+7. Happy collaboration
    
