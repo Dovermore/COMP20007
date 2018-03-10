@@ -1,7 +1,16 @@
-# COMP20007
+# Welcome to COMP20007
 
 ## This is the shared workspace for COMP20007 peers in University 2018
 ## Anyone can upload their program to this directory
+
+* 11 Mar:
+  * If you are not familiar with github and how it works. Check this excellent video tutorial by Daniel Shiffman.
+  * https://www.youtube.com/watch?v=BCQHnlnPusY&list=PLRqwX-V7Uu6ZF9C0YMKuns9sLDzK6zoiV
+  * Here are few useful tips I found when using terminal git:
+    * It's **cool** and let you **show off more** compared to using github desktop/web github.
+    * If you are not sure about any command always use 'git <subcommand> help' for information.
+    * Always start with 'git pull'.
+    * To discard your uncommited changes and rollback to when you pull. Use 'git checkout .' **WARNING: Your work will lost after this command**.
 
 ### Please follow the instruction below to edit this repo:
 
