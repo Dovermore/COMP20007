@@ -59,6 +59,10 @@ void print_data(data_t *d) {
     mid most value suffice)
  */
 
+
+/*
+This function computes a random integer between [lo, hi)
+ */
 int random_selection(int lo, int hi) {
     if (hi == lo) {
         return lo;
@@ -67,16 +71,41 @@ int random_selection(int lo, int hi) {
     return r;
 }
 
+
+/*
+Swap the value of two integers a and b
+*/
 void swap_int(int *a, int *b) {
     int temp = *a;
     *a = *b;
     *b = temp;
 }
 
+
+/*
+The partition
+ary: The array to be partitioned
+val: The value selected as the axis (Not index)
+left: The left most elements of array to be partitioned
+right: The left most elements of array to be partitioned
+btm: returning the the index to the first value equal to val after partition
+top: returning the the index to the first value larger to val after partition
+So [oth..., lo1, lo2, lo3...., loi, eq1, eq2, ... eqj, hi1, hi2,.... hik, oth..]
+             ^                       ^                  ^             ^
+             |                       |                  |             |
+            left                    btm                top          right
+ */
 void partition(int *ary, int val, int left, int right, int* btm, int* top) {
-    int lo = left,
-        hi = right,
-        cur = left;
+    int lo = left,   /* Index of the first value equal to val
+                        in the sorted part */
+                     /* ###There is a potential bug here, since at first the
+                        first element is assumed to be equal to val ###*/
+        hi = right,  /* Index - 1 of the first larger value 
+                        in the sorted array(i.e.this is not sorted yet)  */
+        cur = left;  /* The current unsearched 
+                        index(i.e. This is not sorted) */
+
+    /* While the unsorted index is still less than the sorted part */
     while (cur <= hi) {
         if (ary[cur] > val) {
             swap_int(ary+cur, ary+hi);
@@ -93,6 +122,14 @@ void partition(int *ary, int val, int left, int right, int* btm, int* top) {
     *top = cur;
 }
 
+
+
+/*
+Return the top_k value of an array
+ary: pointer to the array
+n:   length of the array (1 based)
+k:   The k-th value needed (1 baesd)
+ */
 int top_k_selection(int *ary, int n, int k) {
     int k_lo = 0,
         k_hi = 0,
@@ -116,6 +153,7 @@ int top_k_selection(int *ary, int n, int k) {
     }
     return ary[k - 1];
 }
+
 
 int find_min(loc_t *loc) {
     int i = 0,
